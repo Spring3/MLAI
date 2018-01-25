@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <ul>
+    <li><span class='green'></span> - Correct recognition</li>
+    <li><span class='red'></span> - Perceptron recognition mistake</li>
+  </ul>
+  <div id="wrapper">
+    <section>
+      <h3>Untrained</h3>
+      <canvas id="canvas_untrained" width="350" height="350"></canvas>
+    </section>
+    <section>
+      <h3>Trained</h3>
+      <canvas id="canvas_trained" width="350" height="350"></canvas>
+    </section>
+  </div>
+  <script type="text/javascript" src="src/random.js"></script>
+  <script type="text/javascript" src="src/perceptron.js"></script>
+  <script type="text/javascript" src="src/point.js"></script>
+  <script type="text/javascript" src="src/canvas.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+<style type="text/css">
+  #wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .green {
+    background: green;
+  }
+
+  .red {
+    background: red;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  span {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+  }
+
+  h3 {
+    text-align: center;
+  }
+</style>
+</html>
