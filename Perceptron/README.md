@@ -11,3 +11,7 @@ All the points, that are below the line, are considered to be negative, with a v
 Now let's see of perceptron will be able to guess to which part of the canvas the point belongs.
 
 Open `index.html` file to see the results of a trained and untrained perceptron
+
+I also added an ability to track the progress by clicking the mouse button on the canvas.
+
+The problem of this perceptron is in the case when both weights are 0. In this case, the guess will always be equal to 0 and the activation function will return 1. This can be solved by adding another input - a `bias`, that will always be equal to `1`.

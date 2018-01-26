@@ -5,6 +5,11 @@
 </head>
 <body>
   <ul>
+    <li>Click on the canvas to display dots one by one</li>
+    <li>Click "Finish" to display the rest of the dots</li>
+    <li>&nbsp;</li>
+    <li>Refresh the page to re-initialize the weights for Perceptron</li>
+    <li>&nbsp;</li>
     <li><span class='green'></span> - Correct recognition</li>
     <li><span class='red'></span> - Perceptron recognition mistake</li>
   </ul>
@@ -12,10 +17,22 @@
     <section>
       <h3>Untrained</h3>
       <canvas id="canvas_untrained" width="350" height="350"></canvas>
+      <div style="text-align: center;">
+        Weights: <input id="weights_untrained" type="text" name="weights_untrained" disabled="">
+        <br>
+        <br>
+        <button id="finish_untrained" onclick="finishUntrained()">Finish</button>
+      </div>
     </section>
     <section>
       <h3>Trained</h3>
       <canvas id="canvas_trained" width="350" height="350"></canvas>
+      <div style="text-align: center;">
+         Weights: <input id="weights_trained" type="text" name="weights_trained" disabled="">
+        <br>
+        <br>
+        <button id="finish_trained" onclick="finishTrained()">Finish</button>
+      </div>
     </section>
   </div>
   <script type="text/javascript" src="src/random.js"></script>
@@ -36,6 +53,10 @@
 
   .red {
     background: red;
+  }
+
+  input {
+    text-align: center;
   }
 
   ul {

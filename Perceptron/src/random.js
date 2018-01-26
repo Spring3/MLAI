@@ -7,3 +7,8 @@ function random (min, max) {
 function randomFloat (min, max) {
   return Math.random() * (max - min) + min;
 };
+
+function round (number, precision) {
+  const factor = Math.pow(10, precision);
+  return Math.round(number * factor) / factor;
+}
